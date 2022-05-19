@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</table>
+<tr>
+    <th>Модель</th>
+    <th>Цвет</th>
+    <th>Номер машины</th>
+</tr>
+<tr th:each="car: ${cars}">
+    <br>
+    <td th:text="${car.model}" />
+    <td th:text="${car.color}" />
+    <td th:text="${car.plateNumber}" />
+</tr>
+</table>
+
+
+</body>
+</html>
